@@ -78,7 +78,7 @@ func main() {
 			clampPos(&pos)
 			// fmt.Print(string(instruction), readNumPad(pos, numPad))
 		}
-		fmt.Println("\n", readNumPad(pos, numPad), pos, numPad)
+		// fmt.Println("\n", readNumPad(pos, numPad), pos, numPad)
 	}
 
 }
