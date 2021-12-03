@@ -4,7 +4,7 @@ const input = readTestInput('three', false);
 
 const getInitialBitCounts = (length) => Array.from({ length }, () => ([0, 0]))
 const getBitCounts = (input) => input.reduce((acc, curr) => {
-  curr.split('').forEach((val, idx) => {
+  [...curr].forEach((val, idx) => {
     acc[idx][parseInt(val, 10)] += 1
   });
   return acc;
