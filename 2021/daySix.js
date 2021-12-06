@@ -4,8 +4,8 @@ const initialFishState = readTestInput('six', false)
   .join('\n')
   .split(',')
 
-let fishDayCounts = Array
-  .from({length : 9}, () => 0)
+let fishDayCounts = Array(9)
+  .fill(0)
   .reduce((acc, curr, idx) => ({...acc, [`${idx}`]: curr}), {});
 
 initialFishState.forEach((days) => fishDayCounts[days] += 1)
