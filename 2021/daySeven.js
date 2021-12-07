@@ -9,12 +9,14 @@ let minimumFuel = Number.MAX_VALUE
 let currentPos = min;
 
 const computeFuel = (dist) => {
-  return Array.from({length: dist}, (_, idx) => idx + 1 ).reduce((sum, curr) => sum+curr, 0);
+  return (dist*(dist+1))/2
 }
 
 while(currentPos <= max) {
   let bailed = false
-  const currentFuelSum = input.slice(0).reduce((sum, curr, _, arr) => {
+  const currentFuelSum = input
+    .slice(0)
+    .reduce((sum, curr, _, arr) => {
     if(sum > minimumFuel) {
       bailed = true
       arr.splice(1)
