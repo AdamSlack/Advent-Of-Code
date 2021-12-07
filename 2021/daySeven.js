@@ -27,7 +27,6 @@ while(currentPos <= max) {
   if(currentFuelSum < minimumFuel && !bailed) {
     minimumFuel = currentFuelSum
   }
-  console.log(min, currentPos, max)
   currentPos++
 }
 
