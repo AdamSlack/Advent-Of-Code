@@ -46,11 +46,10 @@ const printCoords = (coords) => {
   const maxX = Math.max(...coords.map(([x]) => x))+1
   const maxY = Math.max(...coords.map(([_, y]) => y))+1
 
-  const grid = Array(maxY).fill(0).map(() => Array(maxX).fill('.'));
+  const grid = Array(maxY).fill(0).map(() => Array(maxX).fill('⬛'));
   
-
   coords.forEach(([x,y]) => {
-    grid[y][x] = '#'
+    grid[y][x] = '⬜'
     console.log
   })
 
