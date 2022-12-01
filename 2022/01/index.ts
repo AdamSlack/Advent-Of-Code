@@ -19,3 +19,13 @@ const sortedElves = elfCaloriesSums.sort((a, b) => b-a);
 const topThree = sortedElves.slice(0, 3);
 const topThreeSum = topThree.reduce((acc, curr) => acc+curr, 0);
 console.log('Total Calories from Top 3:', topThreeSum);
+ 
+
+// const foo = readFileSync('inputs/part_1.txt', 'utf-8')
+//   .split('\n\n')
+//   .filter((line) => !!line)
+//   .map((line: string) => line.split('\n').reduce((acc, curr) => acc + parseInt(curr, 10), 0))
+//   .sort((a,b) => b-a)
+//   .slice(0, 3)
+//   .reduce((acc, curr) => acc+curr, 0);
+// console.log(foo)
