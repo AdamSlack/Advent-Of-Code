@@ -1,0 +1,22 @@
+"use strict";
+exports.__esModule = true;
+var fs_1 = require("fs");
+var path_1 = require("path");
+var readInput = function (fileName) {
+    var fp = (0, path_1.join)(__dirname, 'inputs', "".concat(fileName, ".txt"));
+    return (0, fs_1.readFileSync)(fp, 'utf-8');
+};
+var input = readInput('part_1');
+var lines = input.split('\n').map(function (line) { return line.split('   '); });
+var leftList = lines.map(function (line) { return parseInt(line[0]); }).sort();
+var rightList = lines.map(function (line) { return parseInt(line[1]); }).sort();
+var diff = rightList.map(function (right, i) { return Math.abs(right - leftList[i]); });
+var totalDiff = diff.reduce(function (acc, curr) { return acc + curr; }, 0);
+var similarityScores = leftList.map(function (left) { return left * rightList.filter(function (right) { return right === left; }).length; });
+var totalSimilarityScore = similarityScores.reduce(function (acc, curr) { return acc + curr; }, 0);
+console.log(rightList);
+console.log(leftList);
+console.log(diff);
+console.log(totalDiff);
+console.log(similarityScores);
+console.log(totalSimilarityScore);
