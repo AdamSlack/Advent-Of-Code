@@ -1,0 +1,15 @@
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/bin/Debug/net9.0/03
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/bin/Debug/net9.0/03.deps.json
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/bin/Debug/net9.0/03.runtimeconfig.json
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/bin/Debug/net9.0/03.dll
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/bin/Debug/net9.0/03.pdb
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.AssemblyInfoInputs.cache
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.AssemblyInfo.cs
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.csproj.CoreCompileInputs.cache
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.sourcelink.json
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.dll
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/refint/03.dll
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.pdb
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/03.genruntimeconfig.cache
+/Users/adamslack/github/adamslack/Advent-Of-Code/2024/03/obj/Debug/net9.0/ref/03.dll
