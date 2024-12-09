@@ -62,7 +62,8 @@ void Grid::turnRight() {
 void Grid::walkGrid() {
   std::vector<Point> path;
   std::set<std::string> visited;
-
+  path.push_back(currentPos);
+  visited.insert("[" + std::to_string(currentPos.x) + ", " + std::to_string(currentPos.y) + "]");
   while(true) {
     Point nextPos = { currentPos.x + currentDir.x, currentPos.y + currentDir.y };
     if (nextPos.y < 0 || nextPos.y >= grid.size() || nextPos.x < 0 || nextPos.x >= grid[nextPos.y].size()) {
@@ -80,9 +81,9 @@ void Grid::walkGrid() {
       path.push_back(currentPos);
       visited.insert("[" + std::to_string(currentPos.x) + ", " + std::to_string(currentPos.y) + "]");
 
-      std::this_thread::sleep_for(std::chrono::milliseconds(5));
-      system("clear");
-      print();
+      // std::this_thread::sleep_for(std::chrono::milliseconds(5));
+      // system("clear");
+      // print();
     }
   }
   
