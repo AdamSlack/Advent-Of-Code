@@ -1,5 +1,5 @@
 # Compiler to use:
-CC=g++
+CC=g++ -std=c++11
 
 # Flags to pass to compiler:
 CFLAGS=-c -Wall
@@ -8,7 +8,7 @@ CFLAGS=-c -Wall
 LDFLAGS= 
 
 # Sources to compile:
-SOURCES= main.cpp
+SOURCES= main.cpp grid.cpp
 
 # Compile sources to object files, replacing .cpp with .o:
 OBJECTS=$(SOURCES:.cpp=.o)
